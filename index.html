@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="h-screen flex justify-center items-center flex-col">
+    <div class="max-w-screen-md m-auto relative">
+      <!-- full width image width and number show -->
+      <div class="hidden mySlides">
+        <div class="text-base py-2 px-3 absolute top-0 text-white">1 / 4</div>
+        <img
+          class="w-full"
+          src="https://cdn.pixabay.com/photo/2018/10/01/09/21/pets-3715733_960_720.jpg"
+          alt=""
+        />
+        <div class="absolute text-base w-full text-center py-2 px-3 bottom-2 text-white">Caption Text</div>
+      </div>
+
+      <div class="hidden mySlides">
+        <div class="text-base py-2 px-3 absolute top-0 text-white">2 / 4</div>
+        <img
+          class="w-full"
+          src="https://cdn.pixabay.com/photo/2016/10/31/14/55/rottweiler-1785760_960_720.jpg"
+          alt=""
+        />
+        <div class="absolute text-base w-full text-center py-2 px-3 bottom-2 text-white">Caption Text</div>
+      </div>
+
+      <div class="hidden mySlides">
+        <div class="text-base py-2 px-3 absolute top-0 text-white">3 / 4</div>
+        <img
+          class="w-full"
+          src="https://cdn.pixabay.com/photo/2017/08/07/18/57/dog-2606759_960_720.jpg"
+          alt=""
+        />
+        <div class="absolute text-base w-full text-center py-2 px-3 bottom-2 text-white">Caption Text</div>
+      </div>
+
+      <div class="hidden mySlides">
+        <div class="text-base py-2 px-3 absolute top-0 text-white">4 / 4</div>
+        <img
+          class="w-full"
+          src="https://cdn.pixabay.com/photo/2016/01/05/17/51/maltese-1123016_960_720.jpg"
+          alt=""
+        />
+        <div class="absolute text-base w-full text-center py-2 px-3 bottom-2 text-white">Caption Text</div>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="absolute top-1/2 cursor-pointer w-auto p-4 -mt-5 font-extrabold text-lg select-none hover:bg-fuchsia-800 text-center rounded" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="absolute top-1/2 cursor-pointer w-auto p-4 -mt-5 font-extrabold text-lg select-none right-0 hover:bg-fuchsia-800 text-center rounded" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+
+    <!-- The dots/circles -->
+    <div style="text-align: center">
+      <span class="dot cursor-pointer w-4 h-4 inline-block rounded-full bg-green-900 my-0 mx-2 active:bg-green-600 hover:bg-green-600" onclick="currentSlide(1)"></span>
+      <span class="dot cursor-pointer w-4 h-4 inline-block rounded-full bg-green-900 my-0 mx-2 active:bg-green-600 hover:bg-green-600" onclick="currentSlide(2)"></span>
+      <span class="dot cursor-pointer w-4 h-4 inline-block rounded-full bg-green-900 my-0 mx-2 active:bg-green-600 hover:bg-green-600" onclick="currentSlide(3)"></span>
+      <span class="dot cursor-pointer w-4 h-4 inline-block rounded-full bg-green-900 my-0 mx-2 active:bg-green-600 hover:bg-green-600" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
